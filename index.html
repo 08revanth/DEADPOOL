@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<!--
+Head tag basically contains the informaton about the page 
+some of The information about the icon shown on the tab of the website(Nothing but the Favicon)
+Mainly consisting of two parts 
+1..Favicon
+2.Titled
+-->
+
+<head>
+   <title>INTRESTING!</title>
+   <link rel="icon" href="https://upload.wikimedia.org/wikipedia/en/c/ca/Deadpool.png">
+   <link rel="stylesheet" href="Style1.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <!--
+    Get a note of all the tags and attributes
+    -->
+        
+    <!--
+    The id are used to represent that particular part 
+    mainly used in the css part
+    -->
+
+    <i class="material-icons">cloud</i>
+    <i class="material-icons">computer</i>
+    <i class="material-icons">traffic</i>
+
+    <h1 style="color:whitesmoke; background-color:black;">First Heading 
+        <b class="text"> Revanth </b>
+    </h1>
+    <h2 id="Look" style="color:whitesmoke">Revanth here</h2> 
+    <h2>Second Heading</h2>
+    <h3 class="heading">Third Heading
+        <b>Damnnn</b>
+        <p>
+            <b> Here just to test</b>
+        </p>
+    </h3>
+
+    <p class="heading">
+        Just some Random shit!!!<br>
+        watch the deadpool tho huge fan!
+    </p>
+    
+    <pre title="Content" style="color:whitesmoke">
+        
+        <b>This is a test paragrapgh</b>
+        <strong>Hello There!</strong>T
+        <hr>
+        <br>
+        <em>Emphasized</em>
+        <br>
+        <i>Italic</i>
+        <br>
+        Mark This <mark> This is an important information </mark>
+        <br>
+        
+        Dont Do This: <del> Do it </del>
+        <br>
+        <ins> inserted </ins>
+        <small> This is quite small </small>
+        <br>
+        o<sub>2</sub>
+        <hr>
+        7<sup>3</sup>
+        <hr>
+        <br>
+    </pre>
+
+    <br>
+    <br>
+    <table>
+        <tr>
+            <th>Platform</th>
+            <th>Links</th>
+        </tr>
+        <tr>
+            <td>Github ID</td>
+            <td>08revanth</td>
+        </tr>
+        <tr>
+            <td>Linkedin</td>
+            <td><a href="https://www.linkedin.com/in/revanth-malagi-27613a295/" target="blank">Revanth Malagi</a></td>
+        </tr>
+    </table>
+    <br>
+    <br>
+
+    <ul>
+        <li>Name 1</li>
+        <li>Name 2</li>
+        <li>Name 3</li>
+    </ul>
+    <br>
+    <br>
+    
+    <ol>
+        <li>Name 1</li>
+        <li>Name 2</li>
+        <li>Name 3</li>
+    </ol>
+
+    <dl>
+        <dt>Name 1</dt>
+        <dd> * This is the first name </dd>
+        <dt>Name 2</dt>
+        <dd> * This is the Second name </dd>
+    </dl>
+    <br>
+    <br>
+
+    <!-- 
+    block elements are div tag the pre tags <tr> tags <ul> tags etc
+        inline tag include the bold tag the img tag the attribute tag etc
+        NOote <b> tag is being used in the css check that out
+    -->
+    
+    <br>
+
+    <div class="dropdown">
+        <button class="dropdownbutton">Dropdown Button</button>
+        <div class="dropdown-menu">
+            <a href="#">List1</a>
+            <a href="#">List2</a>
+            <a href="#">List3</a>
+            <a href="#">List4</a>
+        </div>
+    </div>
+    
+
+    <!--To change something in div class instead of selecting its tag we cahnge it by using class but to use class is different in div
+    than others check the css sheets for codes-->
+    <div class="test">
+        <h1>First div</h1>
+        <b>
+            This is bold
+        </b>
+        <p>
+            This is a text 
+            <b> 
+                bold one
+            </b>
+        </p>
+    </div> 
+
+    </div>
+    <div style="color:beige;background-color: black;">
+        <h2>Second div</h2>
+        <b>This is bold</b>
+    </div>
+    <br>
+    
+    <br>
+    <iframe src="https://www.google.co.in/" width="300" height="300" style="border:none"> </iframe>
+    <br>
+    <br>
+    <a href="https://www.youtube.com/watch?v=nu_pCVPKzTk">Click Here</a>
+    <br>
+    
+    <br>
+    <!--
+    The above code opens the link in the same tab the below code redirects the link in the new tab
+    -->
+    <a href="https://www.linkedin.com/in/revanth-malagi-27613a295/" target="blank">Go To Site</a>
+    <br>
+    <br>
+    <a href="mail to: revanthmalagi@gmail.com" target="blank"> Contact me Via mail </a>
+    <br>
+    <br>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCM3e8LB3oMWBDQ_p8XaVteeAqgFkDbljo_g&s">
+    <br>
+    <br>
+    
+    <p> This is a euro sign: &euro; </p>
+
+    <!--
+    The action attribute is used to send the info to another tab or folder to store the info inputted by the user
+    and we can give either url or the file infor too send the info to
+    url for other websites etc
+    Refer notes for method uses and functionallity
+    -->
+    
+    <form action="trail.html" method="POST">
+        <label for="username">tomi</label>
+        <br>
+        <input type="checkbox" name="username" id="username" value="tomi">
+        <br>
+        <label for="school">School</label>
+        <br>
+        <input type="text" name="school" id="school">
+        <br>
+        <label>Click to show You are not a robot</label>
+        <br>
+        <input type="radio">
+        <br>
+        <input type="submit">
+        <br>
+        <input type="submit" value="Send">
+        <br>
+    </form>
+</body>
+
+</html>
+<!--
+
+
+
+-->

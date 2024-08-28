@@ -1,0 +1,176 @@
+/* body is called a  selector inside that
+   contains the Declaration*/
+   body{
+    background-image: url("https://img.freepik.com/premium-photo/glowing-spaceship-orbits-planet-starry-galaxy-generated-by-ai_1038396-45.jpg");
+}
+/* using hashtag is necessary while using  id as refrence
+   Thats the use case of id it helps in selcting particular tag if needed
+   or else the all the h2 tags would have had been affected
+*/
+h1{
+    text-align:center;
+    text-decoration-line: underline overline white solid 5px;
+ /*   text-decoration-color: white;
+    text-decoration-style: solid;
+    text-decoration-thickness: 10px; */
+}
+/* Descendant selector where each and every tag after the main tag shows the same properties 
+   in this case the h1 is the parent tag and the rest are descendants
+   For example if we had another tag after b in the same h1 tag then the color of that tag also would change
+   i mean the contents!! */
+h1 b{
+    color:bisque;
+}
+b.text{
+    vertical-align: center;
+}
+#Look {
+    background-color:black;
+    margin: 50px 50px 50px 50px;
+}
+/* to select an element based on its class it should start with a DOT
+   basically the id and class works the same*/
+.heading {
+    color:beige;
+    background-color: black;
+   }
+/* Typically all the tag inside the h3 tag should change the color has mentioned above 
+   but in this case we are selecting the child now after the greaater symbol
+   because the content inside the p tag arent the direct child of the h1 its color do not change! */
+h3 > b{
+    color:bisque;
+}
+   /* Basically the class is an attribute
+      If there are tags with same heading then we can specify what tag the 
+      necessary changes gotta be done*/
+pre.heading{
+       color:whitesmoke;
+       background-color:black
+   }
+   /* if we use asterick sign then each and every element is gonna be affected */
+*{
+       color:white;
+}
+b{
+    margin-top:50px;
+    border: 5px dashed black;
+    border-radius: 10px;
+    padding: 40px 30px 20px 10px;
+/* top right bottom and left */
+}
+pre{
+    color:red;
+    /*
+    background-color: black;
+    */
+    text-align-last:center;
+    font-style: italic;
+    font-size:15px;
+/*
+opacity value can be varied from 0 to 1 
+auto adjusts the height automatically or removes the height
+*/
+    opacity:0.98;
+    height: auto;
+   /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5awrRMjYQ68AihQwDAuNbPmAJC_TZ_DpS5w&s"); 
+    background-position:right top; */
+    
+}
+table,th,td{
+    background-color: black;
+    height: 50px;
+    border: 2px,solid;
+    width:50%;
+    border-collapse:collapse;
+}
+th{
+    height:10px;
+    text-align:center;
+}
+td{
+    text-align:center;
+    padding: 10px;
+}
+tr :hover{
+    background-color: red;
+}
+/* There should be space after tr and space before colon same thing i know but if theres no space it wont display
+    note very imp */
+ul{
+    background-color:rgb(138, 35, 35);
+    border-style: dotted;
+    outline-style: solid;
+    border-width: medium;
+    padding: 40px;
+}
+ol{
+    border-style: solid;
+    border-width: 6px 5px 4px 3px;
+    border-color:aliceblue lightblue lightskyblue lightcyan;
+    outline-style: solid;
+    outline-offset: 10px;
+}
+dl{
+    border-style: groove dashed double inset;
+    border-width: 5px;
+}
+/* Inherit is used to get the info from the others tags
+   it basically in this case sees inherit and checks inside div tag tag b had margins specifed
+   hence it extracts that data from the b tag
+*/
+.dropdownbutton{
+    background-color: red;
+    color: whitesmoke;
+    padding: 5px;
+    font-size: 10px;
+    border:none;
+    cursor:pointer;
+}
+.dropdown{
+    position: relative;
+    display: inline;
+}
+/* note to make the dropdown invisible importantly it is very necessary to 
+   chenge the display take a note to edit it comment out the display line*/
+.dropdown-menu{
+    display:none;
+    position: absolute;
+    background-color:black;
+    min-width: 150px;
+}
+.dropdown-menu a{
+    color:aliceblue;
+    padding: 1px ;
+    text-decoration: none;
+    display:block;
+}
+.dropdown-menu a:hover{
+    background-color: red;
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+/* This is if you hover on it at that time the color changes to grey*/
+.dropdown:hover .dropdownbutton{
+    background-color: grey;
+}
+/* This code changes for all div including classs if we want to select one particular div then we gotta
+   specify like:[class="test"] Than its gonna change for only that particular div orelse it changes to all the div that contain class*/
+div[class]{
+    background-color: grey;
+}
+div{
+    margin-top:inherit;
+    border-top-style: double;
+    border-width: 10px 5px;
+    border-color: black;
+    padding: 20px 10px;
+}
+a{
+    text-decoration: none;
+}
+p{
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-family: monospace,"Lucida console","Courier New";
+}
